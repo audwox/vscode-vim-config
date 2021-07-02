@@ -1,0 +1,152 @@
+{
+    "php.suggest.basic": false,
+    "php.validate.enable": true,
+    "php.validate.run": "onSave",
+    // "php.validate.executablePath": "/path/to/php",
+    "editor.insertSpaces": false,
+    "editor.multiCursorModifier": "alt",
+
+    "vim.useSystemClipboard": true,
+    "vim.hlsearch": true,
+    "vim.handleKeys": {
+       "<C-a>": false,
+       "<C-c>": false,
+       "<C-d>": false,
+       "<C-k>": false,
+       "<C-->": false,
+    },
+
+    // "vim.iskeyword": "@,48-57,_,128-167,224-235",
+    "vim.commandLineModeKeyBindings": [
+
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["j"],
+            "after": ["g", "j"]
+        },
+        {
+            "before": ["k"],
+            "after": ["g", "k"]
+        },
+        {
+            "before": ["u"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "undo",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": ["<C-r>"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "redo",
+                    "args": []
+                }
+            ]
+        }
+    ],
+    "vim.changeWordIncludesWhitespace": false,
+    "vim.camelCaseMotion.enable": true,
+	// Set closing delimiters for the argument text object.
+	"vim.argumentObjectClosingDelimiters": [
+		")",
+		"]"
+	],
+
+	// Set opening delimiters for the argument text object.
+	"vim.argumentObjectOpeningDelimiters": [
+		"(",
+		"["
+	],
+
+	// Set separators for the argument text object.
+	"vim.argumentObjectSeparators": [
+        ",",
+        ".",
+    ],
+    "vim.replaceWithRegister": true,
+
+    "git.path": "c:\\Program Files\\Git\\bin\\git.exe",
+    "files.defaultLanguage": "php",
+    "editor.wrappingStrategy": "advanced",
+    "intelephense.diagnostics.undefinedFunctions": false,
+    "diffEditor.renderSideBySide": true,
+    "editor.wordWrap": "on",
+    "editor.wrappingIndent": "deepIndent",
+    "files.eol": "\n",
+    "files.insertFinalNewline": true,
+    "editor.columnSelection": false,
+    "window.zoomLevel": 0,
+    "remote.SSH.useLocalServer": false,
+    "editor.suggest.localityBonus": true,
+    "editor.cursorWidth": 4,
+    "editor.quickSuggestions": {
+        "comments": true,
+        "strings": true,
+    },
+
+    "workbench.editor.enablePreview": false, // 항상 새 탭에서 파일 open
+    "workbench.colorCustomizations": {
+        "editorCursor.foreground": "#ff0000",
+        "terminalCursor.foreground": "#ff0000"
+    },
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe",
+
+    "intelephense.files.exclude": [
+        "**/.git/**",
+        "**/.svn/**",
+        "**/vendor/**/{Test,test,Tests,tests}/**/*Test.php"
+    ],
+
+    // Controls the window title based on the active editor. Variables are substituted based on the context:
+	// - `${activeEditorShort}`: the file name (e.g. myFile.txt).
+	// - `${activeEditorMedium}`: the path of the file relative to the workspace folder (e.g. myFolder/myFileFolder/myFile.txt).
+	// - `${activeEditorLong}`: the full path of the file (e.g. /Users/Development/myFolder/myFileFolder/myFile.txt).
+	// - `${activeFolderShort}`: the name of the folder the file is contained in (e.g. myFileFolder).
+	// - `${activeFolderMedium}`: the path of the folder the file is contained in, relative to the workspace folder (e.g. myFolder/myFileFolder).
+	// - `${activeFolderLong}`: the full path of the folder the file is contained in (e.g. /Users/Development/myFolder/myFileFolder).
+	// - `${folderName}`: name of the workspace folder the file is contained in (e.g. myFolder).
+	// - `${folderPath}`: file path of the workspace folder the file is contained in (e.g. /Users/Development/myFolder).
+	// - `${rootName}`: name of the workspace (e.g. myFolder or myWorkspace).
+	// - `${rootPath}`: file path of the workspace (e.g. /Users/Development/myWorkspace).
+	// - `${appName}`: e.g. VS Code.
+	// - `${remoteName}`: e.g. SSH
+	// - `${dirty}`: a dirty indicator if the active editor is dirty.
+	// - `${separator}`: a conditional separator (" - ") that only shows when surrounded by variables with values or static text.
+    "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}${separator}${appName}",
+    // "editor.wordSeparators": "@,48-57,_,128-167,224-235",
+	// "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?",
+	"editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+    "workbench.tree.indent": 20,
+
+	// Controls the indentation of wrapped lines.
+	//  - none: No indentation. Wrapped lines begin at column 1.
+	//  - same: Wrapped lines get the same indentation as the parent.
+	//  - indent: Wrapped lines get +1 indentation toward the parent.
+	//  - deepIndent: Wrapped lines get +2 indentation toward the parent.
+    "editor.fontFamily": "Consolas,d2coding,'Courier New' ,'Source Code Pro', monospace",
+    "editor.fontSize": 13.3,
+    "editor.suggestSelection": "first",
+    "workbench.editor.tabCloseButton": "off",
+    "zenMode.hideTabs": false,
+    "scm.alwaysShowRepositories": true,
+    "editor.accessibilitySupport": "off",
+    "remote.SSH.showLoginTerminal": true,
+    "extensions.ignoreRecommendations": false,
+    "gitlens.advanced.messages": {
+        "suppressGitVersionWarning": true
+    },
+
+    "terminal.integrated.fontSize": 13.3,
+    "debug.console.fontSize": 13.3,
+    "editor.tabSize": 8,
+    "diffEditor.ignoreTrimWhitespace": true,
+    "files.trimTrailingWhitespace": true,
+    "editor.cursorStyle": "line",
+    "editor.lineNumbers": "on",
+}
