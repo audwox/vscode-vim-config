@@ -1,0 +1,29 @@
+{
+	"php.executablePath": "/pkg/php/bin/php",
+	"php.validate.executablePath": "/pkg/php/bin/php",
+	"intelephense.environment.documentRoot": "/path",
+	"files.watcherExclude": {
+		"**/.git/**": true,
+		"logs/**": true,
+		"src/**": true,
+		"vendor/**": true,
+	},
+	"search.exclude": {
+		"**/.git": true,
+		"pathname/**": true,
+		"logs/**": true,
+		"src/**": true,
+		"vendor/**": true,
+	},
+	"rest-client.previewOption": "exchange",
+	"editor.fontSize": 13.3,
+	"vim.camelCaseMotion.enable": true,
+	"php-docblocker.useShortNames": true,
+	"intelephense.environment.includePaths": [
+		"/path/to",
+		"/path/to",
+	],
+	"remote.autoForwardPortsSource": "output",
+	"git.enabled": true,
+	// "git.path": "/usr/bin/git",
+}
